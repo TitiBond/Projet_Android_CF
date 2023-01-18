@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/versionTextView"
+        android:layout_width="304dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="NUMERO DE VERSION"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="@+id/logoImageView"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/teamMemberTextView" />
+
+    <TextView
+        android:id="@+id/teamMemberTextView"
+        android:layout_width="304dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="128dp"
+        android:gravity="center"
+        android:text="TEAM"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="@+id/logoImageView"
+        app:layout_constraintStart_toStartOf="@+id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/telechargement" />
+
+    <Button
+        android:id="@+id/backToMainButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFC107"
+        android:text="Page d'accueil"
+        app:layout_constraintEnd_toEndOf="@+id/logoImageView"
+        app:layout_constraintStart_toStartOf="@+id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/versionTextView" />
+
+    <TextView
+        android:id="@+id/applicationNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:text="QUIZ GAME "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="@+id/logoImageView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
